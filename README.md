@@ -38,4 +38,4 @@ And more pro features to come...
 
 #### License
 
-Symphony Music Player Reborn is released under the Apache License v2, which can be found here: [License](LICENSE.md)
+Symphony Music Player Reborn is released under the Apache License v2, which can be found here: [License](LICENSE)
