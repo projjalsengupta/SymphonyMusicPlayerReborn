@@ -16,11 +16,6 @@
 - Visualizer
 - Auto Generated Playlists
 - Blacklist folders. 
-
-And every normal feature you'd expect from a music player.
-
-####Pro features
-
 - Folder browser
 - Fade
 - Main screen tab titles mode
@@ -30,7 +25,7 @@ And every normal feature you'd expect from a music player.
 - Queue support in notification
 - Queue widget
 
-And more pro features to come...
+And every normal feature you'd expect from a music player.
 
 #### Download
 
