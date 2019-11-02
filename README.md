@@ -1,7 +1,7 @@
 # Symphony Music Player Reborn
 [![License: Apache v2](https://img.shields.io/badge/License-Apache%20v2-blue.svg)](https://github.com/projjalsengupta/SymphonyMusicPlayerReborn/blob/master/README.md)
 
-**Material Design Music Player for Android Kitkat(4.4) and up
+**Material Design Music Player for Android Kitkat(4.4) and up**
 
 ####Features
 
