@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/controlsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/albumArtContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp">
+
+            <music.symphony.com.materialmusicv2.customviews.others.CircleProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                app:progressBarThickness="3dp" />
+
+            <ImageView
+                android:id="@+id/albumArt"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/album_art_content_description"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_blank_album_art" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@+id/playPause"
+            android:layout_toEndOf="@+id/albumArtContainer"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="@string/no_song_is_playing"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/text_size_heading" />
+
+        <ImageButton
+            android:id="@+id/playPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/play_pause_button_content_description"
+            android:padding="@dimen/image_button_padding"
+            app:srcCompat="@drawable/ic_play_arrow_white_24dp" />
+    </RelativeLayout>
+</LinearLayout>

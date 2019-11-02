@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/grid_size"
+        android:title="@string/grid_size">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/one"
+                    android:title="1"
+                    tools:ignore="HardcodedText" />
+                <item
+                    android:id="@+id/two"
+                    android:title="2"
+                    tools:ignore="HardcodedText" />
+                <item
+                    android:id="@+id/three"
+                    android:title="3"
+                    tools:ignore="HardcodedText" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/style"
+        android:title="@string/style">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/plain"
+                    android:title="@string/plain" />
+                <item
+                    android:id="@+id/card"
+                    android:title="@string/card" />
+                <item
+                    android:id="@+id/outline"
+                    android:title="@string/outline" />
+                <item
+                    android:id="@+id/colored"
+                    android:title="@string/colored" />
+                <item
+                    android:id="@+id/circular"
+                    android:title="@string/circular" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/shuffle_all"
+        android:title="@string/shuffle_all" />
+</menu>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sort_order"
+        android:title="@string/sort_order">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/title"
+                    android:title="@string/title" />
+                <item
+                    android:id="@+id/track_number"
+                    android:title="@string/track_number" />
+                <item
+                    android:id="@+id/song_duration"
+                    android:title="@string/song_duration" />
+            </group>
+        </menu>
+    </item>
+</menu>

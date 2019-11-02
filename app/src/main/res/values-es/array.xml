@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="DefaultPages">
+        <item>Canciones</item>
+        <item>Álbumes</item>
+        <item>Artistas</item>
+        <item>Géneros</item>
+        <item>Listas de reproducción</item>
+    </string-array>
+
+    <string-array name="AlbumOrArtistGrid">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="VisualizerUpdateInterval">
+        <item>Rápido</item>
+        <item>Medio</item>
+        <item>Lento</item>
+    </string-array>
+
+    <string-array name="Languages">
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+
+    <string-array name="DonationIds">
+        <item>d50</item>
+        <item>d100</item>
+        <item>d200</item>
+        <item>d500</item>
+        <item>d1000</item>
+    </string-array>
+
+    <string-array name="VisualizerType">
+        <item>Circular</item>
+        <item>Bar</item>
+        <item>Wave</item>
+    </string-array>
+
+    <string-array name="NowPlayingStyle">
+        <item>Circular</item>
+        <item>Plano</item>
+        <item>Pantalla completa</item>
+        <item>Gradiente</item>
+        <item>De colores</item>
+        <item>Gradiente circular</item>
+        <item>Color circular</item>
+    </string-array>
+
+    <string-array name="TabTitlesMode">
+        <item>Etiquetado</item>
+        <item>Seleccionado</item>
+        <item>Sin etiqueta</item>
+    </string-array>
+
+    <string-array name="SongItemStyle">
+        <item>Sencillo</item>
+        <item>Card</item>
+        <item>Contorno</item>
+        <item>De colores</item>
+    </string-array>
+
+    <string-array name="AlbumItemStyle">
+        <item>Sencillo</item>
+        <item>Card</item>
+        <item>Contorno</item>
+        <item>De colores</item>
+    </string-array>
+
+    <string-array name="ArtistItemStyle">
+        <item>Sencillo</item>
+        <item>Card</item>
+        <item>Contorno</item>
+        <item>De colores</item>
+    </string-array>
+
+    <string-array name="GenreItemStyle">
+        <item>Sencillo</item>
+        <item>Card</item>
+    </string-array>
+
+    <string-array name="PlaylistItemStyle">
+        <item>Sencillo</item>
+        <item>Card</item>
+    </string-array>
+
+    <string-array name="Theme">
+        <item>La luz</item>
+        <item>Oscuro</item>
+        <item>ennegrecido</item>
+    </string-array>
+
+    <string-array name="ImageType">
+        <item>Circular</item>
+        <item>Cuadrado</item>
+        <item>Esquinas redondeadas</item>
+    </string-array>
+</resources>

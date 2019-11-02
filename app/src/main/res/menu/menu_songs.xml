@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_play"
+        android:icon="@drawable/ic_play_arrow_black_24dp"
+        android:title="@string/play" />
+    <item
+        android:id="@+id/action_play_next"
+        android:icon="@drawable/ic_skip_next_black_24dp"
+        android:title="@string/play_next" />
+    <item
+        android:id="@+id/action_add_to_queue"
+        android:icon="@drawable/ic_queue_black_24dp"
+        android:title="@string/add_to_queue" />
+    <item
+        android:id="@+id/action_go_to_album"
+        android:icon="@drawable/ic_album_black_24dp"
+        android:title="@string/go_to_album" />
+    <item
+        android:id="@+id/action_go_to_artist"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/go_to_artist" />
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_edit_black"
+        android:title="@string/edit_song_info" />
+    <item
+        android:id="@+id/action_add_to_playlist"
+        android:icon="@drawable/ic_queue_music_black_24dp"
+        android:title="@string/add_to_playlist" />
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="@string/share" />
+    <item
+        android:id="@+id/action_set_as_ringtone"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/set_as_ringtone" />
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:title="@string/delete" />
+</menu>

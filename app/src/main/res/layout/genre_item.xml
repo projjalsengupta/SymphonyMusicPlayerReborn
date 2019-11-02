@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/genreItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/library_item_gridsize_1_layout_padding">
+
+    <TextView
+        android:id="@+id/genreName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/library_item_gridsize_1_textview_height"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/textview_margin_genre_item"
+        android:layout_toStartOf="@+id/menu"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="@dimen/default_textview_text_size_primary"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="@dimen/menu_button_size"
+        android:layout_height="@dimen/menu_button_size"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:contentDescription="@string/menu_button_content_description"
+        android:tint="?android:textColorPrimary"
+        app:srcCompat="@drawable/ic_menu_black" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sort_order"
+        android:title="@string/sort_order">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/title"
+                    android:title="@string/title" />
+                <item
+                    android:id="@+id/album"
+                    android:title="@string/albums_title" />
+                <item
+                    android:id="@+id/artist"
+                    android:title="@string/artists_title" />
+                <item
+                    android:id="@+id/year"
+                    android:title="@string/year" />
+            </group>
+        </menu>
+    </item>
+</menu>

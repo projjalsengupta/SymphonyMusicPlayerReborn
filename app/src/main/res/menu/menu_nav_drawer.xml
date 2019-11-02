@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/ic_library_music_black_24dp"
+            android:title="@string/library" />
+        <item
+            android:id="@+id/nav_folder"
+            android:icon="@drawable/ic_folder_black_24dp"
+            android:title="@string/folders_title" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_equalizer"
+            android:icon="@drawable/ic_equalizer_black_24dp"
+            android:title="@string/equalizer" />
+        <item
+            android:id="@+id/nav_sleep_timer"
+            android:icon="@drawable/ic_timer_black_24dp"
+            android:title="@string/sleep_timer" />
+        <item
+            android:id="@+id/nav_blacklist"
+            android:icon="@drawable/ic_blacklist"
+            android:title="@string/blacklist" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="@string/about" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share_black_24dp"
+            android:title="@string/share_app" />
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/ic_star_border_black_24dp"
+            android:title="@string/rate_app" />
+    </group>
+</menu>

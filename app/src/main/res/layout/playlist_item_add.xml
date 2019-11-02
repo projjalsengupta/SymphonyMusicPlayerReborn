@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/createPlaylistBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/library_item_gridsize_1_layout_padding"
+    android:paddingEnd="@dimen/library_item_gridsize_1_layout_padding">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/create_playlist"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/create_playlist"
+        android:textSize="@dimen/default_textview_text_size_primary"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/ic_add_black_24dp"
+        app:iconGravity="textStart"
+        app:iconSize="@dimen/default_textview_text_size_primary"
+        app:rippleColor="?android:windowBackground" />
+</LinearLayout>

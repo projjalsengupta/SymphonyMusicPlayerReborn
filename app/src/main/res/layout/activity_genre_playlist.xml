@@ -1,0 +1,211 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorAccent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:windowBackground">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomController">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?colorPrimary"
+                app:elevation="0dp"
+                tools:ignore="UnusedAttribute">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsingToolbarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?colorAccent"
+                    app:contentScrim="?colorAccent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                    <LinearLayout
+                        android:id="@+id/genrePlaylistDetailsContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom_gradient"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/playlistImage"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:scaleType="centerCrop"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/genrePlaylistName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="?android:textColorPrimary"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/genrePlaylistSongCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:padding="4dp"
+                                android:textColor="?android:textColorPrimary"
+                                android:textSize="@dimen/default_textview_text_size_primary" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:padding="4dp"
+                                android:text="-"
+                                android:textColor="?android:textColorPrimary"
+                                android:textSize="@dimen/default_textview_text_size_primary"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/genrePlaylistSongsDuration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:padding="4dp"
+                                android:textColor="?android:textColorPrimary"
+                                android:textSize="@dimen/default_textview_text_size_primary" />
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/shuffleAll"
+                            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:padding="4dp"
+                            android:text="@string/shuffle_all"
+                            android:textSize="@dimen/default_textview_text_size_large"
+                            app:backgroundTint="?colorAccent"
+                            app:cornerRadius="8dp"
+                            app:icon="@drawable/ic_shuffle_black_24dp"
+                            app:iconGravity="textStart"
+                            app:iconSize="@dimen/default_textview_text_size_large"
+                            app:rippleColor="?android:windowBackground" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/addToQueue"
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:text="@string/add_to_queue"
+                                android:textColor="?android:textColorPrimary"
+                                android:textSize="@dimen/default_textview_text_size_secondary"
+                                app:cornerRadius="8dp"
+                                app:icon="@drawable/ic_queue_black_24dp"
+                                app:iconGravity="textStart"
+                                app:iconSize="@dimen/default_textview_text_size_secondary"
+                                app:iconTint="?android:textColorPrimary"
+                                app:rippleColor="?colorAccent"
+                                app:strokeColor="?android:textColorPrimary" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/add"
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:text="@string/add_songs_to_playlist"
+                                android:textColor="?android:textColorPrimary"
+                                android:textSize="@dimen/default_textview_text_size_secondary"
+                                app:cornerRadius="8dp"
+                                app:icon="@drawable/ic_add_black_24dp"
+                                app:iconGravity="textStart"
+                                app:iconSize="@dimen/default_textview_text_size_secondary"
+                                app:iconTint="?android:textColorPrimary"
+                                app:rippleColor="?colorAccent"
+                                app:strokeColor="?android:textColorPrimary" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:background="@android:color/transparent"
+                        app:elevation="0dp"
+                        app:layout_collapseMode="pin"
+                        tools:ignore="UnusedAttribute" />
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingBottom="88dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/playAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/play"
+                android:textSize="@dimen/default_textview_text_size_primary"
+                app:backgroundTint="?colorAccent"
+                app:icon="@drawable/ic_play_arrow_black_24dp"
+                app:iconSize="@dimen/default_textview_text_size_primary"
+                app:layout_anchor="@+id/recyclerView"
+                app:layout_anchorGravity="bottom|end"
+                app:rippleColor="?android:windowBackground" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <music.symphony.com.materialmusicv2.customviews.others.BottomPlaybackController
+            android:id="@+id/bottomController"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

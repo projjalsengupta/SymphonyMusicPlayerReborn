@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="DefaultPages">
+        <item>Songs</item>
+        <item>Albums</item>
+        <item>Artists</item>
+        <item>Genres</item>
+        <item>Playlists</item>
+    </string-array>
+
+    <string-array name="AlbumOrArtistGrid">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="VisualizerUpdateInterval">
+        <item>Fast</item>
+        <item>Medium</item>
+        <item>Slow</item>
+    </string-array>
+
+    <string-array name="Languages">
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+
+    <string-array name="DonationIds">
+        <item>d50</item>
+        <item>d100</item>
+        <item>d200</item>
+        <item>d500</item>
+        <item>d1000</item>
+    </string-array>
+
+    <string-array name="VisualizerType">
+        <item>Circular</item>
+        <item>Bar</item>
+        <item>Wave</item>
+    </string-array>
+
+    <string-array name="NowPlayingStyle">
+        <item>Circular</item>
+        <item>Flat</item>
+        <item>Fullscreen</item>
+        <item>Gradient</item>
+        <item>Colored</item>
+        <item>Circular gradient</item>
+        <item>Circular colored</item>
+    </string-array>
+
+    <string-array name="TabTitlesMode">
+        <item>Labeled</item>
+        <item>Selected</item>
+        <item>Unlabeled</item>
+    </string-array>
+
+    <string-array name="SongItemStyle">
+        <item>Plain</item>
+        <item>Card</item>
+        <item>Outline</item>
+        <item>Colored</item>
+    </string-array>
+
+    <string-array name="AlbumItemStyle">
+        <item>Plain</item>
+        <item>Card</item>
+        <item>Outline</item>
+        <item>Colored</item>
+    </string-array>
+
+    <string-array name="ArtistItemStyle">
+        <item>Plain</item>
+        <item>Card</item>
+        <item>Outline</item>
+        <item>Colored</item>
+    </string-array>
+
+    <string-array name="GenreItemStyle">
+        <item>Plain</item>
+        <item>Card</item>
+    </string-array>
+
+    <string-array name="PlaylistItemStyle">
+        <item>Plain</item>
+        <item>Card</item>
+    </string-array>
+
+    <string-array name="Theme">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Black</item>
+    </string-array>
+
+    <string-array name="ImageType">
+        <item>Circular</item>
+        <item>Square</item>
+        <item>Rounded corners</item>
+    </string-array>
+</resources>

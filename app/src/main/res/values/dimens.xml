@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widget_song_name_text_size">22sp</dimen>
+    <dimen name="widget_others_text_size">16sp</dimen>
+    <dimen name="text_size_heading">18sp</dimen>
+    <dimen name="image_button_padding">16dp</dimen>
+    <dimen name="layout_margin_default_start_end">16dp</dimen>
+    <dimen name="layout_margin_default_top_bottom">4dp</dimen>
+    <dimen name="library_item_gridsize_1_imageview_size">40dp</dimen>
+    <dimen name="folder_item_gridsize_1_imageview_size">40dp</dimen>
+    <dimen name="folder_item_gridsize_1_imageview_margin">8dp</dimen>
+    <dimen name="library_item_gridsize_1_textview_height">28dp</dimen>
+    <dimen name="library_item_gridsize_1_layout_padding">4dp</dimen>
+    <dimen name="textview_margin_start_end">8dp</dimen>
+    <dimen name="textview_heading_margin_top_bottom">6dp</dimen>
+    <dimen name="default_textview_text_size_primary">16sp</dimen>
+    <dimen name="default_textview_text_size_secondary">14sp</dimen>
+    <dimen name="default_textview_text_size_large">20sp</dimen>
+    <dimen name="gridsize_one_imageview_margin">4dp</dimen>
+    <dimen name="textview_margin_genre_item">10dp</dimen>
+    <dimen name="progressbar_height">3dp</dimen>
+    <dimen name="main_screen_controller_imagebutton_height">48dp</dimen>
+    <dimen name="shuffle_all_and_playlist_layout_image_button_size">28dp</dimen>
+    <dimen name="shuffle_all_and_playlist_layout_image_button_margin">14dp</dimen>
+    <dimen name="drag_handle_size">24dp</dimen>
+    <dimen name="menu_button_size">40dp</dimen>
+</resources>

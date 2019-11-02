@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:windowBackground"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/buyProContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/pro_features"
+            android:textColor="?colorAccent"
+            android:textSize="@dimen/default_textview_text_size_large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/fade"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/default_textview_text_size_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/unlock_tab_titles_mode"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/default_textview_text_size_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/unlock_now_playing"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/default_textview_text_size_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/unlock_visualizer_type"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/default_textview_text_size_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/visualizer_speed"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/default_textview_text_size_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/queue_in_notification"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/default_textview_text_size_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/and_many_more"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/default_textview_text_size_primary" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/donateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/pro_donate"
+            android:textColor="?colorAccent"
+            android:textSize="@dimen/default_textview_text_size_large"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

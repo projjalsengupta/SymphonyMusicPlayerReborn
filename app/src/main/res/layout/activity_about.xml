@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorPrimary"
+    android:fitsSystemWindows="true"
+    tools:context="music.symphony.com.materialmusicv2.activities.AboutActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        app:elevation="0dp"
+        tools:ignore="UnusedAttribute">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="?colorPrimary"
+            app:elevation="0dp"
+            app:layout_collapseMode="pin"
+            tools:ignore="UnusedAttribute" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:windowBackground"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin_default_start_end"
+                app:cardBackgroundColor="?android:windowBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.github.florent37.shapeofview.shapes.RoundRectView
+                        android:id="@+id/img_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:shape_roundRect_topLeftRadius="8dp"
+                        app:shape_roundRect_topRightRadius="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/symphony_red">
+
+                            <music.symphony.com.materialmusicv2.customviews.others.SquareImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="62.4dp"
+                                android:layout_height="62.4dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:src="@mipmap/ic_launcher" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/layout_margin_default_start_end"
+                                android:layout_toEndOf="@+id/imageView"
+                                android:gravity="center"
+                                android:text="@string/full_app_name"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_size_heading"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/versionButton"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_container"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/version"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="@dimen/default_textview_text_size_primary"
+                        app:backgroundTint="@android:color/transparent"
+                        app:cornerRadius="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/versionButton"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/about_symphony_text"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="@dimen/default_textview_text_size_primary" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/licenseButton"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView2"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/licenses"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="16sp"
+                        app:backgroundTint="@android:color/transparent"
+                        app:cornerRadius="16dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/privacyPolicy"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/licenseButton"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/privacy_policy"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="16sp"
+                        app:backgroundTint="@android:color/transparent"
+                        app:cornerRadius="16dp" />
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_margin_default_start_end"
+                android:layout_marginEnd="@dimen/layout_margin_default_start_end"
+                android:layout_marginBottom="@dimen/layout_margin_default_start_end"
+                app:cardBackgroundColor="?android:windowBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.github.florent37.shapeofview.shapes.RoundRectView
+                        android:id="@+id/textHeaderAboutMe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:shape_roundRect_topLeftRadius="8dp"
+                        app:shape_roundRect_topRightRadius="8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/symphony_red"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:text="@string/about_me"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/text_size_heading"
+                            android:textStyle="bold" />
+                    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textHeaderAboutMe"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/name"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="@dimen/text_size_heading"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView3"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/current_status"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="@dimen/default_textview_text_size_primary" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/followButton"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView4"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/follow_me_on_twitter"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="@dimen/default_textview_text_size_primary"
+                        app:backgroundTint="@android:color/transparent"
+                        app:cornerRadius="16dp" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_margin_default_start_end"
+                android:layout_marginEnd="@dimen/layout_margin_default_start_end"
+                android:layout_marginBottom="@dimen/layout_margin_default_start_end"
+                app:cardBackgroundColor="?android:windowBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.github.florent37.shapeofview.shapes.RoundRectView
+                        android:id="@+id/textHeaderSupport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:shape_roundRect_topLeftRadius="8dp"
+                        app:shape_roundRect_topRightRadius="8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/symphony_red"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:text="@string/support_development"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/text_size_heading"
+                            android:textStyle="bold" />
+                    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+                    <TextView
+                        android:id="@+id/textRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textHeaderSupport"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/rate_app_text"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/rateButton"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textRate"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/rate_app"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="16sp"
+                        app:backgroundTint="@android:color/transparent"
+                        app:cornerRadius="16dp" />
+
+                    <TextView
+                        android:id="@+id/textShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rateButton"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/share_app_text"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/shareButton"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textShare"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/share_app"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="16sp"
+                        app:backgroundTint="@android:color/transparent"
+                        app:cornerRadius="16dp" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="android:colorEdgeEffect">@android:color/white</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--window content transitions-->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowSharedElementsUseOverlay">false</item>
+        <!--shared element transitions-->
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/activity_transformation
+        </item>
+        <item name="android:windowSharedElementExitTransition">@transition/activity_transformation
+        </item>
+
+        <item name="android:fontFamily">@font/font_product_sans</item>
+        <item name="fontFamily">@font/font_product_sans</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme1">
+        <item name="colorAccent">#ff8a80</item>
+        <item name="colorControlActivated">#ff8a80</item>
+        <item name="android:colorControlActivated">#ff8a80</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme1">
+        <item name="colorAccent">#ff8a80</item>
+        <item name="colorControlActivated">#ff8a80</item>
+        <item name="android:colorControlActivated">#ff8a80</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme1">
+        <item name="colorAccent">#ff8a80</item>
+        <item name="colorControlActivated">#ff8a80</item>
+        <item name="android:colorControlActivated">#ff8a80</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme2">
+        <item name="colorAccent">#ff5252</item>
+        <item name="colorControlActivated">#ff5252</item>
+        <item name="android:colorControlActivated">#ff5252</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme2">
+        <item name="colorAccent">#ff5252</item>
+        <item name="colorControlActivated">#ff5252</item>
+        <item name="android:colorControlActivated">#ff5252</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme2">
+        <item name="colorAccent">#ff5252</item>
+        <item name="colorControlActivated">#ff5252</item>
+        <item name="android:colorControlActivated">#ff5252</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme3">
+        <item name="colorAccent">#ff1744</item>
+        <item name="colorControlActivated">#ff1744</item>
+        <item name="android:colorControlActivated">#ff1744</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme3">
+        <item name="colorAccent">#ff1744</item>
+        <item name="colorControlActivated">#ff1744</item>
+        <item name="android:colorControlActivated">#ff1744</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme3">
+        <item name="colorAccent">#ff1744</item>
+        <item name="colorControlActivated">#ff1744</item>
+        <item name="android:colorControlActivated">#ff1744</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme4">
+        <item name="colorAccent">#d50000</item>
+        <item name="colorControlActivated">#d50000</item>
+        <item name="android:colorControlActivated">#d50000</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme4">
+        <item name="colorAccent">#d50000</item>
+        <item name="colorControlActivated">#d50000</item>
+        <item name="android:colorControlActivated">#d50000</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme4">
+        <item name="colorAccent">#d50000</item>
+        <item name="colorControlActivated">#d50000</item>
+        <item name="android:colorControlActivated">#d50000</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme5">
+        <item name="colorAccent">#ff80ab</item>
+        <item name="colorControlActivated">#ff80ab</item>
+        <item name="android:colorControlActivated">#ff80ab</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme5">
+        <item name="colorAccent">#ff80ab</item>
+        <item name="colorControlActivated">#ff80ab</item>
+        <item name="android:colorControlActivated">#ff80ab</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme5">
+        <item name="colorAccent">#ff80ab</item>
+        <item name="colorControlActivated">#ff80ab</item>
+        <item name="android:colorControlActivated">#ff80ab</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme6">
+        <item name="colorAccent">#ff4081</item>
+        <item name="colorControlActivated">#ff4081</item>
+        <item name="android:colorControlActivated">#ff4081</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme6">
+        <item name="colorAccent">#ff4081</item>
+        <item name="colorControlActivated">#ff4081</item>
+        <item name="android:colorControlActivated">#ff4081</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme6">
+        <item name="colorAccent">#ff4081</item>
+        <item name="colorControlActivated">#ff4081</item>
+        <item name="android:colorControlActivated">#ff4081</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme7">
+        <item name="colorAccent">#f50057</item>
+        <item name="colorControlActivated">#f50057</item>
+        <item name="android:colorControlActivated">#f50057</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme7">
+        <item name="colorAccent">#f50057</item>
+        <item name="colorControlActivated">#f50057</item>
+        <item name="android:colorControlActivated">#f50057</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme7">
+        <item name="colorAccent">#f50057</item>
+        <item name="colorControlActivated">#f50057</item>
+        <item name="android:colorControlActivated">#f50057</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme8">
+        <item name="colorAccent">#c51162</item>
+        <item name="colorControlActivated">#c51162</item>
+        <item name="android:colorControlActivated">#c51162</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme8">
+        <item name="colorAccent">#c51162</item>
+        <item name="colorControlActivated">#c51162</item>
+        <item name="android:colorControlActivated">#c51162</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme8">
+        <item name="colorAccent">#c51162</item>
+        <item name="colorControlActivated">#c51162</item>
+        <item name="android:colorControlActivated">#c51162</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme9">
+        <item name="colorAccent">#ea80fc</item>
+        <item name="colorControlActivated">#ea80fc</item>
+        <item name="android:colorControlActivated">#ea80fc</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme9">
+        <item name="colorAccent">#ea80fc</item>
+        <item name="colorControlActivated">#ea80fc</item>
+        <item name="android:colorControlActivated">#ea80fc</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme9">
+        <item name="colorAccent">#ea80fc</item>
+        <item name="colorControlActivated">#ea80fc</item>
+        <item name="android:colorControlActivated">#ea80fc</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme10">
+        <item name="colorAccent">#e040fb</item>
+        <item name="colorControlActivated">#e040fb</item>
+        <item name="android:colorControlActivated">#e040fb</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme10">
+        <item name="colorAccent">#e040fb</item>
+        <item name="colorControlActivated">#e040fb</item>
+        <item name="android:colorControlActivated">#e040fb</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme10">
+        <item name="colorAccent">#e040fb</item>
+        <item name="colorControlActivated">#e040fb</item>
+        <item name="android:colorControlActivated">#e040fb</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme11">
+        <item name="colorAccent">#d500f9</item>
+        <item name="colorControlActivated">#d500f9</item>
+        <item name="android:colorControlActivated">#d500f9</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme11">
+        <item name="colorAccent">#d500f9</item>
+        <item name="colorControlActivated">#d500f9</item>
+        <item name="android:colorControlActivated">#d500f9</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme11">
+        <item name="colorAccent">#d500f9</item>
+        <item name="colorControlActivated">#d500f9</item>
+        <item name="android:colorControlActivated">#d500f9</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme12">
+        <item name="colorAccent">#aa00ff</item>
+        <item name="colorControlActivated">#aa00ff</item>
+        <item name="android:colorControlActivated">#aa00ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme12">
+        <item name="colorAccent">#aa00ff</item>
+        <item name="colorControlActivated">#aa00ff</item>
+        <item name="android:colorControlActivated">#aa00ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme12">
+        <item name="colorAccent">#aa00ff</item>
+        <item name="colorControlActivated">#aa00ff</item>
+        <item name="android:colorControlActivated">#aa00ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme13">
+        <item name="colorAccent">#b388ff</item>
+        <item name="colorControlActivated">#b388ff</item>
+        <item name="android:colorControlActivated">#b388ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme13">
+        <item name="colorAccent">#b388ff</item>
+        <item name="colorControlActivated">#b388ff</item>
+        <item name="android:colorControlActivated">#b388ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme13">
+        <item name="colorAccent">#b388ff</item>
+        <item name="colorControlActivated">#b388ff</item>
+        <item name="android:colorControlActivated">#b388ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme14">
+        <item name="colorAccent">#7c4dff</item>
+        <item name="colorControlActivated">#7c4dff</item>
+        <item name="android:colorControlActivated">#7c4dff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme14">
+        <item name="colorAccent">#7c4dff</item>
+        <item name="colorControlActivated">#7c4dff</item>
+        <item name="android:colorControlActivated">#7c4dff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme14">
+        <item name="colorAccent">#7c4dff</item>
+        <item name="colorControlActivated">#7c4dff</item>
+        <item name="android:colorControlActivated">#7c4dff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme15">
+        <item name="colorAccent">#651fff</item>
+        <item name="colorControlActivated">#651fff</item>
+        <item name="android:colorControlActivated">#651fff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme15">
+        <item name="colorAccent">#651fff</item>
+        <item name="colorControlActivated">#651fff</item>
+        <item name="android:colorControlActivated">#651fff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme15">
+        <item name="colorAccent">#651fff</item>
+        <item name="colorControlActivated">#651fff</item>
+        <item name="android:colorControlActivated">#651fff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme16">
+        <item name="colorAccent">#6200ea</item>
+        <item name="colorControlActivated">#6200ea</item>
+        <item name="android:colorControlActivated">#6200ea</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme16">
+        <item name="colorAccent">#6200ea</item>
+        <item name="colorControlActivated">#6200ea</item>
+        <item name="android:colorControlActivated">#6200ea</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme16">
+        <item name="colorAccent">#6200ea</item>
+        <item name="colorControlActivated">#6200ea</item>
+        <item name="android:colorControlActivated">#6200ea</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme17">
+        <item name="colorAccent">#8c9eff</item>
+        <item name="colorControlActivated">#8c9eff</item>
+        <item name="android:colorControlActivated">#8c9eff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme17">
+        <item name="colorAccent">#8c9eff</item>
+        <item name="colorControlActivated">#8c9eff</item>
+        <item name="android:colorControlActivated">#8c9eff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme17">
+        <item name="colorAccent">#8c9eff</item>
+        <item name="colorControlActivated">#8c9eff</item>
+        <item name="android:colorControlActivated">#8c9eff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme18">
+        <item name="colorAccent">#536dfe</item>
+        <item name="colorControlActivated">#536dfe</item>
+        <item name="android:colorControlActivated">#536dfe</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme18">
+        <item name="colorAccent">#536dfe</item>
+        <item name="colorControlActivated">#536dfe</item>
+        <item name="android:colorControlActivated">#536dfe</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme18">
+        <item name="colorAccent">#536dfe</item>
+        <item name="colorControlActivated">#536dfe</item>
+        <item name="android:colorControlActivated">#536dfe</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme19">
+        <item name="colorAccent">#3d5afe</item>
+        <item name="colorControlActivated">#3d5afe</item>
+        <item name="android:colorControlActivated">#3d5afe</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme19">
+        <item name="colorAccent">#3d5afe</item>
+        <item name="colorControlActivated">#3d5afe</item>
+        <item name="android:colorControlActivated">#3d5afe</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme19">
+        <item name="colorAccent">#3d5afe</item>
+        <item name="colorControlActivated">#3d5afe</item>
+        <item name="android:colorControlActivated">#3d5afe</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme20">
+        <item name="colorAccent">#304ffe</item>
+        <item name="colorControlActivated">#304ffe</item>
+        <item name="android:colorControlActivated">#304ffe</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme20">
+        <item name="colorAccent">#304ffe</item>
+        <item name="colorControlActivated">#304ffe</item>
+        <item name="android:colorControlActivated">#304ffe</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme20">
+        <item name="colorAccent">#304ffe</item>
+        <item name="colorControlActivated">#304ffe</item>
+        <item name="android:colorControlActivated">#304ffe</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme21">
+        <item name="colorAccent">#82b1ff</item>
+        <item name="colorControlActivated">#82b1ff</item>
+        <item name="android:colorControlActivated">#82b1ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme21">
+        <item name="colorAccent">#82b1ff</item>
+        <item name="colorControlActivated">#82b1ff</item>
+        <item name="android:colorControlActivated">#82b1ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme21">
+        <item name="colorAccent">#82b1ff</item>
+        <item name="colorControlActivated">#82b1ff</item>
+        <item name="android:colorControlActivated">#82b1ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme22">
+        <item name="colorAccent">#448aff</item>
+        <item name="colorControlActivated">#448aff</item>
+        <item name="android:colorControlActivated">#448aff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme22">
+        <item name="colorAccent">#448aff</item>
+        <item name="colorControlActivated">#448aff</item>
+        <item name="android:colorControlActivated">#448aff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme22">
+        <item name="colorAccent">#448aff</item>
+        <item name="colorControlActivated">#448aff</item>
+        <item name="android:colorControlActivated">#448aff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme23">
+        <item name="colorAccent">#2979ff</item>
+        <item name="colorControlActivated">#2979ff</item>
+        <item name="android:colorControlActivated">#2979ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme23">
+        <item name="colorAccent">#2979ff</item>
+        <item name="colorControlActivated">#2979ff</item>
+        <item name="android:colorControlActivated">#2979ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme23">
+        <item name="colorAccent">#2979ff</item>
+        <item name="colorControlActivated">#2979ff</item>
+        <item name="android:colorControlActivated">#2979ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme24">
+        <item name="colorAccent">#2962ff</item>
+        <item name="colorControlActivated">#2962ff</item>
+        <item name="android:colorControlActivated">#2962ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme24">
+        <item name="colorAccent">#2962ff</item>
+        <item name="colorControlActivated">#2962ff</item>
+        <item name="android:colorControlActivated">#2962ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme24">
+        <item name="colorAccent">#2962ff</item>
+        <item name="colorControlActivated">#2962ff</item>
+        <item name="android:colorControlActivated">#2962ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme25">
+        <item name="colorAccent">#80d8ff</item>
+        <item name="colorControlActivated">#80d8ff</item>
+        <item name="android:colorControlActivated">#80d8ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme25">
+        <item name="colorAccent">#80d8ff</item>
+        <item name="colorControlActivated">#80d8ff</item>
+        <item name="android:colorControlActivated">#80d8ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme25">
+        <item name="colorAccent">#80d8ff</item>
+        <item name="colorControlActivated">#80d8ff</item>
+        <item name="android:colorControlActivated">#80d8ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme26">
+        <item name="colorAccent">#40c4ff</item>
+        <item name="colorControlActivated">#40c4ff</item>
+        <item name="android:colorControlActivated">#40c4ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme26">
+        <item name="colorAccent">#40c4ff</item>
+        <item name="colorControlActivated">#40c4ff</item>
+        <item name="android:colorControlActivated">#40c4ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme26">
+        <item name="colorAccent">#40c4ff</item>
+        <item name="colorControlActivated">#40c4ff</item>
+        <item name="android:colorControlActivated">#40c4ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme27">
+        <item name="colorAccent">#00b0ff</item>
+        <item name="colorControlActivated">#00b0ff</item>
+        <item name="android:colorControlActivated">#00b0ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme27">
+        <item name="colorAccent">#00b0ff</item>
+        <item name="colorControlActivated">#00b0ff</item>
+        <item name="android:colorControlActivated">#00b0ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme27">
+        <item name="colorAccent">#00b0ff</item>
+        <item name="colorControlActivated">#00b0ff</item>
+        <item name="android:colorControlActivated">#00b0ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme28">
+        <item name="colorAccent">#0091ea</item>
+        <item name="colorControlActivated">#0091ea</item>
+        <item name="android:colorControlActivated">#0091ea</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme28">
+        <item name="colorAccent">#0091ea</item>
+        <item name="colorControlActivated">#0091ea</item>
+        <item name="android:colorControlActivated">#0091ea</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme28">
+        <item name="colorAccent">#0091ea</item>
+        <item name="colorControlActivated">#0091ea</item>
+        <item name="android:colorControlActivated">#0091ea</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme29">
+        <item name="colorAccent">#84ffff</item>
+        <item name="colorControlActivated">#84ffff</item>
+        <item name="android:colorControlActivated">#84ffff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme29">
+        <item name="colorAccent">#84ffff</item>
+        <item name="colorControlActivated">#84ffff</item>
+        <item name="android:colorControlActivated">#84ffff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme29">
+        <item name="colorAccent">#84ffff</item>
+        <item name="colorControlActivated">#84ffff</item>
+        <item name="android:colorControlActivated">#84ffff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme30">
+        <item name="colorAccent">#18ffff</item>
+        <item name="colorControlActivated">#18ffff</item>
+        <item name="android:colorControlActivated">#18ffff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme30">
+        <item name="colorAccent">#18ffff</item>
+        <item name="colorControlActivated">#18ffff</item>
+        <item name="android:colorControlActivated">#18ffff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme30">
+        <item name="colorAccent">#18ffff</item>
+        <item name="colorControlActivated">#18ffff</item>
+        <item name="android:colorControlActivated">#18ffff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme31">
+        <item name="colorAccent">#00e5ff</item>
+        <item name="colorControlActivated">#00e5ff</item>
+        <item name="android:colorControlActivated">#00e5ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme31">
+        <item name="colorAccent">#00e5ff</item>
+        <item name="colorControlActivated">#00e5ff</item>
+        <item name="android:colorControlActivated">#00e5ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme31">
+        <item name="colorAccent">#00e5ff</item>
+        <item name="colorControlActivated">#00e5ff</item>
+        <item name="android:colorControlActivated">#00e5ff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme32">
+        <item name="colorAccent">#00b8d4</item>
+        <item name="colorControlActivated">#00b8d4</item>
+        <item name="android:colorControlActivated">#00b8d4</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme32">
+        <item name="colorAccent">#00b8d4</item>
+        <item name="colorControlActivated">#00b8d4</item>
+        <item name="android:colorControlActivated">#00b8d4</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme32">
+        <item name="colorAccent">#00b8d4</item>
+        <item name="colorControlActivated">#00b8d4</item>
+        <item name="android:colorControlActivated">#00b8d4</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme33">
+        <item name="colorAccent">#a7ffeb</item>
+        <item name="colorControlActivated">#a7ffeb</item>
+        <item name="android:colorControlActivated">#a7ffeb</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme33">
+        <item name="colorAccent">#a7ffeb</item>
+        <item name="colorControlActivated">#a7ffeb</item>
+        <item name="android:colorControlActivated">#a7ffeb</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme33">
+        <item name="colorAccent">#a7ffeb</item>
+        <item name="colorControlActivated">#a7ffeb</item>
+        <item name="android:colorControlActivated">#a7ffeb</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme34">
+        <item name="colorAccent">#64ffda</item>
+        <item name="colorControlActivated">#64ffda</item>
+        <item name="android:colorControlActivated">#64ffda</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme34">
+        <item name="colorAccent">#64ffda</item>
+        <item name="colorControlActivated">#64ffda</item>
+        <item name="android:colorControlActivated">#64ffda</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme34">
+        <item name="colorAccent">#64ffda</item>
+        <item name="colorControlActivated">#64ffda</item>
+        <item name="android:colorControlActivated">#64ffda</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme35">
+        <item name="colorAccent">#1de9b6</item>
+        <item name="colorControlActivated">#1de9b6</item>
+        <item name="android:colorControlActivated">#1de9b6</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme35">
+        <item name="colorAccent">#1de9b6</item>
+        <item name="colorControlActivated">#1de9b6</item>
+        <item name="android:colorControlActivated">#1de9b6</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme35">
+        <item name="colorAccent">#1de9b6</item>
+        <item name="colorControlActivated">#1de9b6</item>
+        <item name="android:colorControlActivated">#1de9b6</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme36">
+        <item name="colorAccent">#00bfa5</item>
+        <item name="colorControlActivated">#00bfa5</item>
+        <item name="android:colorControlActivated">#00bfa5</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme36">
+        <item name="colorAccent">#00bfa5</item>
+        <item name="colorControlActivated">#00bfa5</item>
+        <item name="android:colorControlActivated">#00bfa5</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme36">
+        <item name="colorAccent">#00bfa5</item>
+        <item name="colorControlActivated">#00bfa5</item>
+        <item name="android:colorControlActivated">#00bfa5</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme37">
+        <item name="colorAccent">#b9f6ca</item>
+        <item name="colorControlActivated">#b9f6ca</item>
+        <item name="android:colorControlActivated">#b9f6ca</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme37">
+        <item name="colorAccent">#b9f6ca</item>
+        <item name="colorControlActivated">#b9f6ca</item>
+        <item name="android:colorControlActivated">#b9f6ca</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme37">
+        <item name="colorAccent">#b9f6ca</item>
+        <item name="colorControlActivated">#b9f6ca</item>
+        <item name="android:colorControlActivated">#b9f6ca</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme38">
+        <item name="colorAccent">#69f0ae</item>
+        <item name="colorControlActivated">#69f0ae</item>
+        <item name="android:colorControlActivated">#69f0ae</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme38">
+        <item name="colorAccent">#69f0ae</item>
+        <item name="colorControlActivated">#69f0ae</item>
+        <item name="android:colorControlActivated">#69f0ae</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme38">
+        <item name="colorAccent">#69f0ae</item>
+        <item name="colorControlActivated">#69f0ae</item>
+        <item name="android:colorControlActivated">#69f0ae</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme39">
+        <item name="colorAccent">#00e676</item>
+        <item name="colorControlActivated">#00e676</item>
+        <item name="android:colorControlActivated">#00e676</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme39">
+        <item name="colorAccent">#00e676</item>
+        <item name="colorControlActivated">#00e676</item>
+        <item name="android:colorControlActivated">#00e676</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme39">
+        <item name="colorAccent">#00e676</item>
+        <item name="colorControlActivated">#00e676</item>
+        <item name="android:colorControlActivated">#00e676</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme40">
+        <item name="colorAccent">#00c853</item>
+        <item name="colorControlActivated">#00c853</item>
+        <item name="android:colorControlActivated">#00c853</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme40">
+        <item name="colorAccent">#00c853</item>
+        <item name="colorControlActivated">#00c853</item>
+        <item name="android:colorControlActivated">#00c853</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme40">
+        <item name="colorAccent">#00c853</item>
+        <item name="colorControlActivated">#00c853</item>
+        <item name="android:colorControlActivated">#00c853</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme41">
+        <item name="colorAccent">#ccff90</item>
+        <item name="colorControlActivated">#ccff90</item>
+        <item name="android:colorControlActivated">#ccff90</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme41">
+        <item name="colorAccent">#ccff90</item>
+        <item name="colorControlActivated">#ccff90</item>
+        <item name="android:colorControlActivated">#ccff90</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme41">
+        <item name="colorAccent">#ccff90</item>
+        <item name="colorControlActivated">#ccff90</item>
+        <item name="android:colorControlActivated">#ccff90</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme42">
+        <item name="colorAccent">#b2ff59</item>
+        <item name="colorControlActivated">#b2ff59</item>
+        <item name="android:colorControlActivated">#b2ff59</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme42">
+        <item name="colorAccent">#b2ff59</item>
+        <item name="colorControlActivated">#b2ff59</item>
+        <item name="android:colorControlActivated">#b2ff59</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme42">
+        <item name="colorAccent">#b2ff59</item>
+        <item name="colorControlActivated">#b2ff59</item>
+        <item name="android:colorControlActivated">#b2ff59</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme43">
+        <item name="colorAccent">#76ff03</item>
+        <item name="colorControlActivated">#76ff03</item>
+        <item name="android:colorControlActivated">#76ff03</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme43">
+        <item name="colorAccent">#76ff03</item>
+        <item name="colorControlActivated">#76ff03</item>
+        <item name="android:colorControlActivated">#76ff03</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme43">
+        <item name="colorAccent">#76ff03</item>
+        <item name="colorControlActivated">#76ff03</item>
+        <item name="android:colorControlActivated">#76ff03</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme44">
+        <item name="colorAccent">#64dd17</item>
+        <item name="colorControlActivated">#64dd17</item>
+        <item name="android:colorControlActivated">#64dd17</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme44">
+        <item name="colorAccent">#64dd17</item>
+        <item name="colorControlActivated">#64dd17</item>
+        <item name="android:colorControlActivated">#64dd17</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme44">
+        <item name="colorAccent">#64dd17</item>
+        <item name="colorControlActivated">#64dd17</item>
+        <item name="android:colorControlActivated">#64dd17</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme45">
+        <item name="colorAccent">#f4ff81</item>
+        <item name="colorControlActivated">#f4ff81</item>
+        <item name="android:colorControlActivated">#f4ff81</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme45">
+        <item name="colorAccent">#f4ff81</item>
+        <item name="colorControlActivated">#f4ff81</item>
+        <item name="android:colorControlActivated">#f4ff81</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme45">
+        <item name="colorAccent">#f4ff81</item>
+        <item name="colorControlActivated">#f4ff81</item>
+        <item name="android:colorControlActivated">#f4ff81</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme46">
+        <item name="colorAccent">#eeff41</item>
+        <item name="colorControlActivated">#eeff41</item>
+        <item name="android:colorControlActivated">#eeff41</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme46">
+        <item name="colorAccent">#eeff41</item>
+        <item name="colorControlActivated">#eeff41</item>
+        <item name="android:colorControlActivated">#eeff41</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme46">
+        <item name="colorAccent">#eeff41</item>
+        <item name="colorControlActivated">#eeff41</item>
+        <item name="android:colorControlActivated">#eeff41</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme47">
+        <item name="colorAccent">#c6ff00</item>
+        <item name="colorControlActivated">#c6ff00</item>
+        <item name="android:colorControlActivated">#c6ff00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme47">
+        <item name="colorAccent">#c6ff00</item>
+        <item name="colorControlActivated">#c6ff00</item>
+        <item name="android:colorControlActivated">#c6ff00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme47">
+        <item name="colorAccent">#c6ff00</item>
+        <item name="colorControlActivated">#c6ff00</item>
+        <item name="android:colorControlActivated">#c6ff00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme48">
+        <item name="colorAccent">#aeea00</item>
+        <item name="colorControlActivated">#aeea00</item>
+        <item name="android:colorControlActivated">#aeea00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme48">
+        <item name="colorAccent">#aeea00</item>
+        <item name="colorControlActivated">#aeea00</item>
+        <item name="android:colorControlActivated">#aeea00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme48">
+        <item name="colorAccent">#aeea00</item>
+        <item name="colorControlActivated">#aeea00</item>
+        <item name="android:colorControlActivated">#aeea00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme49">
+        <item name="colorAccent">#ffff8d</item>
+        <item name="colorControlActivated">#ffff8d</item>
+        <item name="android:colorControlActivated">#ffff8d</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme49">
+        <item name="colorAccent">#ffff8d</item>
+        <item name="colorControlActivated">#ffff8d</item>
+        <item name="android:colorControlActivated">#ffff8d</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme49">
+        <item name="colorAccent">#ffff8d</item>
+        <item name="colorControlActivated">#ffff8d</item>
+        <item name="android:colorControlActivated">#ffff8d</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme50">
+        <item name="colorAccent">#ffff00</item>
+        <item name="colorControlActivated">#ffff00</item>
+        <item name="android:colorControlActivated">#ffff00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme50">
+        <item name="colorAccent">#ffff00</item>
+        <item name="colorControlActivated">#ffff00</item>
+        <item name="android:colorControlActivated">#ffff00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme50">
+        <item name="colorAccent">#ffff00</item>
+        <item name="colorControlActivated">#ffff00</item>
+        <item name="android:colorControlActivated">#ffff00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme51">
+        <item name="colorAccent">#ffea00</item>
+        <item name="colorControlActivated">#ffea00</item>
+        <item name="android:colorControlActivated">#ffea00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme51">
+        <item name="colorAccent">#ffea00</item>
+        <item name="colorControlActivated">#ffea00</item>
+        <item name="android:colorControlActivated">#ffea00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme51">
+        <item name="colorAccent">#ffea00</item>
+        <item name="colorControlActivated">#ffea00</item>
+        <item name="android:colorControlActivated">#ffea00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme52">
+        <item name="colorAccent">#ffd600</item>
+        <item name="colorControlActivated">#ffd600</item>
+        <item name="android:colorControlActivated">#ffd600</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme52">
+        <item name="colorAccent">#ffd600</item>
+        <item name="colorControlActivated">#ffd600</item>
+        <item name="android:colorControlActivated">#ffd600</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme52">
+        <item name="colorAccent">#ffd600</item>
+        <item name="colorControlActivated">#ffd600</item>
+        <item name="android:colorControlActivated">#ffd600</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme53">
+        <item name="colorAccent">#ffe57f</item>
+        <item name="colorControlActivated">#ffe57f</item>
+        <item name="android:colorControlActivated">#ffe57f</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme53">
+        <item name="colorAccent">#ffe57f</item>
+        <item name="colorControlActivated">#ffe57f</item>
+        <item name="android:colorControlActivated">#ffe57f</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme53">
+        <item name="colorAccent">#ffe57f</item>
+        <item name="colorControlActivated">#ffe57f</item>
+        <item name="android:colorControlActivated">#ffe57f</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme54">
+        <item name="colorAccent">#ffd740</item>
+        <item name="colorControlActivated">#ffd740</item>
+        <item name="android:colorControlActivated">#ffd740</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme54">
+        <item name="colorAccent">#ffd740</item>
+        <item name="colorControlActivated">#ffd740</item>
+        <item name="android:colorControlActivated">#ffd740</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme54">
+        <item name="colorAccent">#ffd740</item>
+        <item name="colorControlActivated">#ffd740</item>
+        <item name="android:colorControlActivated">#ffd740</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme55">
+        <item name="colorAccent">#ffc400</item>
+        <item name="colorControlActivated">#ffc400</item>
+        <item name="android:colorControlActivated">#ffc400</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme55">
+        <item name="colorAccent">#ffc400</item>
+        <item name="colorControlActivated">#ffc400</item>
+        <item name="android:colorControlActivated">#ffc400</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme55">
+        <item name="colorAccent">#ffc400</item>
+        <item name="colorControlActivated">#ffc400</item>
+        <item name="android:colorControlActivated">#ffc400</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme56">
+        <item name="colorAccent">#ffab00</item>
+        <item name="colorControlActivated">#ffab00</item>
+        <item name="android:colorControlActivated">#ffab00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme56">
+        <item name="colorAccent">#ffab00</item>
+        <item name="colorControlActivated">#ffab00</item>
+        <item name="android:colorControlActivated">#ffab00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme56">
+        <item name="colorAccent">#ffab00</item>
+        <item name="colorControlActivated">#ffab00</item>
+        <item name="android:colorControlActivated">#ffab00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme57">
+        <item name="colorAccent">#ffd180</item>
+        <item name="colorControlActivated">#ffd180</item>
+        <item name="android:colorControlActivated">#ffd180</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme57">
+        <item name="colorAccent">#ffd180</item>
+        <item name="colorControlActivated">#ffd180</item>
+        <item name="android:colorControlActivated">#ffd180</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme57">
+        <item name="colorAccent">#ffd180</item>
+        <item name="colorControlActivated">#ffd180</item>
+        <item name="android:colorControlActivated">#ffd180</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme58">
+        <item name="colorAccent">#ffab40</item>
+        <item name="colorControlActivated">#ffab40</item>
+        <item name="android:colorControlActivated">#ffab40</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme58">
+        <item name="colorAccent">#ffab40</item>
+        <item name="colorControlActivated">#ffab40</item>
+        <item name="android:colorControlActivated">#ffab40</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme58">
+        <item name="colorAccent">#ffab40</item>
+        <item name="colorControlActivated">#ffab40</item>
+        <item name="android:colorControlActivated">#ffab40</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme59">
+        <item name="colorAccent">#ff9100</item>
+        <item name="colorControlActivated">#ff9100</item>
+        <item name="android:colorControlActivated">#ff9100</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme59">
+        <item name="colorAccent">#ff9100</item>
+        <item name="colorControlActivated">#ff9100</item>
+        <item name="android:colorControlActivated">#ff9100</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme59">
+        <item name="colorAccent">#ff9100</item>
+        <item name="colorControlActivated">#ff9100</item>
+        <item name="android:colorControlActivated">#ff9100</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme60">
+        <item name="colorAccent">#ff6d00</item>
+        <item name="colorControlActivated">#ff6d00</item>
+        <item name="android:colorControlActivated">#ff6d00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme60">
+        <item name="colorAccent">#ff6d00</item>
+        <item name="colorControlActivated">#ff6d00</item>
+        <item name="android:colorControlActivated">#ff6d00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme60">
+        <item name="colorAccent">#ff6d00</item>
+        <item name="colorControlActivated">#ff6d00</item>
+        <item name="android:colorControlActivated">#ff6d00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme61">
+        <item name="colorAccent">#ff9e80</item>
+        <item name="colorControlActivated">#ff9e80</item>
+        <item name="android:colorControlActivated">#ff9e80</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme61">
+        <item name="colorAccent">#ff9e80</item>
+        <item name="colorControlActivated">#ff9e80</item>
+        <item name="android:colorControlActivated">#ff9e80</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme61">
+        <item name="colorAccent">#ff9e80</item>
+        <item name="colorControlActivated">#ff9e80</item>
+        <item name="android:colorControlActivated">#ff9e80</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme62">
+        <item name="colorAccent">#ff6e40</item>
+        <item name="colorControlActivated">#ff6e40</item>
+        <item name="android:colorControlActivated">#ff6e40</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme62">
+        <item name="colorAccent">#ff6e40</item>
+        <item name="colorControlActivated">#ff6e40</item>
+        <item name="android:colorControlActivated">#ff6e40</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme62">
+        <item name="colorAccent">#ff6e40</item>
+        <item name="colorControlActivated">#ff6e40</item>
+        <item name="android:colorControlActivated">#ff6e40</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme63">
+        <item name="colorAccent">#ff3d00</item>
+        <item name="colorControlActivated">#ff3d00</item>
+        <item name="android:colorControlActivated">#ff3d00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme63">
+        <item name="colorAccent">#ff3d00</item>
+        <item name="colorControlActivated">#ff3d00</item>
+        <item name="android:colorControlActivated">#ff3d00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme63">
+        <item name="colorAccent">#ff3d00</item>
+        <item name="colorControlActivated">#ff3d00</item>
+        <item name="android:colorControlActivated">#ff3d00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light.Theme64">
+        <item name="colorAccent">#dd2c00</item>
+        <item name="colorControlActivated">#dd2c00</item>
+        <item name="android:colorControlActivated">#dd2c00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark.Theme64">
+        <item name="colorAccent">#dd2c00</item>
+        <item name="colorControlActivated">#dd2c00</item>
+        <item name="android:colorControlActivated">#dd2c00</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black.Theme64">
+        <item name="colorAccent">#dd2c00</item>
+        <item name="colorControlActivated">#dd2c00</item>
+        <item name="android:colorControlActivated">#dd2c00</item>
+    </style>
+</resources>
