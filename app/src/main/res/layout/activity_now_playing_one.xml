@@ -78,12 +78,19 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/player">
 
+            <View
+                android:id="@+id/centerView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_above="@+id/controller"
+                android:layout_above="@+id/centerView"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="35dp"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -213,8 +220,9 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/controller"
-                android:layout_alignParentBottom="true">
+                android:layout_below="@+id/centerView"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="35dp">
 
                 <com.gauravk.audiovisualizer.visualizer.BarVisualizer xmlns:custom="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/barVisualizer"
