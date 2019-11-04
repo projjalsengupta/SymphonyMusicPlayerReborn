@@ -76,7 +76,7 @@
     <string name="hootan_baraary" translatable="false">Hootan Baraary</string>
     <string name="licenses">Licenses</string>
     <string name="about_symphony_text">Symphony is a power packed music player for Android 4.4 and up and higher focused on performance</string>
-    <string name="version" translatable="false">Version 6.0</string>
+    <string name="version" translatable="false">Version 6.0.1</string>
     <!--End of About Page Strings-->
 
     <!--ErrorActivity Strings-->

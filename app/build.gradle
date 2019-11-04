@@ -6,8 +6,8 @@ android {
         applicationId "music.symphony.com.materialmusicv2"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 62
-        versionName "6.0"
+        versionCode 63
+        versionName "6.0.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
