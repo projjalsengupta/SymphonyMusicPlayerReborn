@@ -313,4 +313,5 @@
     <string name="unlock_tab_titles_mode">3 tab title modes</string>
     <string name="unlock_visualizer_type">3 visualizer types</string>
     <string name="circular">Circular</string>
+    <string name="enable_visualizer">Enable visualizer</string>
 </resources>

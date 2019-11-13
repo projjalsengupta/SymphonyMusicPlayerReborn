@@ -80,6 +80,12 @@
             android:summary="@string/now_playing_style_footer"
             android:title="@string/now_playing_style"
             app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="enableVisualizer"
+            android:summary="@string/enable_or_disable"
+            android:title="@string/enable_visualizer"
+            app:iconSpaceReserved="false" />
         <Preference
             android:key="visualizerType"
             android:summary="@string/visualizer_type_footer"

@@ -367,18 +367,19 @@ public class NowPlayingActivity extends MusicPlayerActivity implements SharedPre
     public void onPause() {
         super.onPause();
 
-        EventBus.getDefault().post(new UnlinkVisualizer());
+        if (SymphonyApplication.getInstance().getPreferenceUtils().getEnableVisualizer()) {
+            EventBus.getDefault().post(new UnlinkVisualizer());
 
-        if (waveVisualizer != null) {
-            waveVisualizer.hide();
+            if (waveVisualizer != null) {
+                waveVisualizer.hide();
+            }
+            if (barVisualizer != null) {
+                barVisualizer.hide();
+            }
+            if (circleLineVisualizer != null) {
+                circleLineVisualizer.setVisibility(View.INVISIBLE);
+            }
         }
-        if (barVisualizer != null) {
-            barVisualizer.hide();
-        }
-        if (circleLineVisualizer != null) {
-            circleLineVisualizer.setVisibility(View.INVISIBLE);
-        }
-
         if (EventBus.getDefault().isRegistered(this)) {
             EventBus.getDefault().unregister(this);
         }
@@ -392,19 +393,21 @@ public class NowPlayingActivity extends MusicPlayerActivity implements SharedPre
     protected void onResume() {
         super.onResume();
 
-        EventBus.getDefault().post(new LinkVisualizer());
+        if (SymphonyApplication.getInstance().getPreferenceUtils().getEnableVisualizer()) {
+            EventBus.getDefault().post(new LinkVisualizer());
 
-        if (visualizerType == 0) {
-            if (circleLineVisualizer != null) {
-                circleLineVisualizer.setVisibility(View.VISIBLE);
-            }
-        } else if (visualizerType == 1) {
-            if (barVisualizer != null) {
-                barVisualizer.show();
-            }
-        } else {
-            if (waveVisualizer != null) {
-                waveVisualizer.show();
+            if (visualizerType == 0) {
+                if (circleLineVisualizer != null) {
+                    circleLineVisualizer.setVisibility(View.VISIBLE);
+                }
+            } else if (visualizerType == 1) {
+                if (barVisualizer != null) {
+                    barVisualizer.show();
+                }
+            } else {
+                if (waveVisualizer != null) {
+                    waveVisualizer.show();
+                }
             }
         }
 
@@ -433,9 +436,16 @@ public class NowPlayingActivity extends MusicPlayerActivity implements SharedPre
             rotation.removeAllListeners();
             rotation = null;
         }
-
-        if (waveVisualizer != null) {
-            waveVisualizer.release();
+        if (SymphonyApplication.getInstance().getPreferenceUtils().getEnableVisualizer()) {
+            if (waveVisualizer != null) {
+                waveVisualizer.release();
+            }
+            if (circleLineVisualizer != null) {
+                circleLineVisualizer.release();
+            }
+            if (barVisualizer != null) {
+                barVisualizer.release();
+            }
         }
     }
 
@@ -514,17 +524,19 @@ public class NowPlayingActivity extends MusicPlayerActivity implements SharedPre
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEvent(VisualizerData visualizerData) {
-        if (visualizerType == 0) {
-            if (circleLineVisualizer != null) {
-                circleLineVisualizer.setRawAudioBytes(visualizerData.data);
-            }
-        } else if (visualizerType == 1) {
-            if (barVisualizer != null) {
-                barVisualizer.setRawAudioBytes(visualizerData.data);
-            }
-        } else {
-            if (waveVisualizer != null) {
-                waveVisualizer.setRawAudioBytes(visualizerData.data);
+        if (SymphonyApplication.getInstance().getPreferenceUtils().getEnableVisualizer()) {
+            if (visualizerType == 0) {
+                if (circleLineVisualizer != null) {
+                    circleLineVisualizer.setRawAudioBytes(visualizerData.data);
+                }
+            } else if (visualizerType == 1) {
+                if (barVisualizer != null) {
+                    barVisualizer.setRawAudioBytes(visualizerData.data);
+                }
+            } else {
+                if (waveVisualizer != null) {
+                    waveVisualizer.setRawAudioBytes(visualizerData.data);
+                }
             }
         }
     }
@@ -626,6 +638,7 @@ public class NowPlayingActivity extends MusicPlayerActivity implements SharedPre
         switch (s) {
             case "nowPlayingStyle":
             case "visualizerBars":
+            case "enableVisualizer":
             case "visualizerType":
             case "visualizerHeight":
             case "visualizerAnimationFrameRate":
@@ -678,14 +691,16 @@ public class NowPlayingActivity extends MusicPlayerActivity implements SharedPre
         } else {
             tint = backgroundColor;
         }
-        if (waveVisualizer != null) {
-            waveVisualizer.setColor(nowPlayingStyle != 1 ? tint : foregroundColor);
-        }
-        if (barVisualizer != null) {
-            barVisualizer.setColor(nowPlayingStyle != 1 ? tint : foregroundColor);
-        }
-        if (circleLineVisualizer != null) {
-            circleLineVisualizer.setColor(tint);
+        if (SymphonyApplication.getInstance().getPreferenceUtils().getEnableVisualizer()) {
+            if (waveVisualizer != null) {
+                waveVisualizer.setColor(nowPlayingStyle != 1 ? tint : foregroundColor);
+            }
+            if (barVisualizer != null) {
+                barVisualizer.setColor(nowPlayingStyle != 1 ? tint : foregroundColor);
+            }
+            if (circleLineVisualizer != null) {
+                circleLineVisualizer.setColor(tint);
+            }
         }
         setColorFilter(tint, songProgress2);
         setColorFilter(ContrastColor(windowBackground), shuffle, playPrevious, playNext, repeat, lyricsButton, openQueue, menu);
@@ -856,34 +871,46 @@ public class NowPlayingActivity extends MusicPlayerActivity implements SharedPre
     }
 
     private void setUpVisualizer() {
-        visualizerType = SymphonyApplication.getInstance().getPreferenceUtils().getVisualizerType();
-        int visualizerSpeed = SymphonyApplication.getInstance().getPreferenceUtils().getVisualizerSpeed();
-        if (visualizerType == 0) {
-            if (circleLineVisualizer != null) {
-                circleLineVisualizer.setAnimationSpeed(calculateVisualizerAnimationSpeed(visualizerSpeed));
-            }
-            if (waveVisualizer != null) {
-                waveVisualizer.hide();
-            }
-            if (barVisualizer != null) {
-                barVisualizer.hide();
-            }
-        } else if (visualizerType == 1) {
-            if (barVisualizer != null) {
-                barVisualizer.setAnimationSpeed(calculateVisualizerAnimationSpeed(visualizerSpeed));
-            }
-            if (waveVisualizer != null) {
-                waveVisualizer.hide();
-            }
-            if (circleLineVisualizer != null) {
-                circleLineVisualizer.setVisibility(View.INVISIBLE);
+        if (SymphonyApplication.getInstance().getPreferenceUtils().getEnableVisualizer()) {
+            visualizerType = SymphonyApplication.getInstance().getPreferenceUtils().getVisualizerType();
+            int visualizerSpeed = SymphonyApplication.getInstance().getPreferenceUtils().getVisualizerSpeed();
+            if (visualizerType == 0) {
+                if (circleLineVisualizer != null) {
+                    circleLineVisualizer.setAnimationSpeed(calculateVisualizerAnimationSpeed(visualizerSpeed));
+                }
+                if (waveVisualizer != null) {
+                    waveVisualizer.hide();
+                }
+                if (barVisualizer != null) {
+                    barVisualizer.hide();
+                }
+            } else if (visualizerType == 1) {
+                if (barVisualizer != null) {
+                    barVisualizer.setAnimationSpeed(calculateVisualizerAnimationSpeed(visualizerSpeed));
+                }
+                if (waveVisualizer != null) {
+                    waveVisualizer.hide();
+                }
+                if (circleLineVisualizer != null) {
+                    circleLineVisualizer.setVisibility(View.INVISIBLE);
+                }
+            } else {
+                if (waveVisualizer != null) {
+                    waveVisualizer.setAnimationSpeed(calculateVisualizerAnimationSpeed(visualizerSpeed));
+                }
+                if (barVisualizer != null) {
+                    barVisualizer.hide();
+                }
+                if (circleLineVisualizer != null) {
+                    circleLineVisualizer.setVisibility(View.INVISIBLE);
+                }
             }
         } else {
             if (waveVisualizer != null) {
-                waveVisualizer.setAnimationSpeed(calculateVisualizerAnimationSpeed(visualizerSpeed));
+                waveVisualizer.setVisibility(View.INVISIBLE);
             }
             if (barVisualizer != null) {
-                barVisualizer.hide();
+                barVisualizer.setVisibility(View.INVISIBLE);
             }
             if (circleLineVisualizer != null) {
                 circleLineVisualizer.setVisibility(View.INVISIBLE);

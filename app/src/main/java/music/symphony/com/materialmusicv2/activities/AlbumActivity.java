@@ -235,7 +235,7 @@ public class AlbumActivity extends MusicPlayerActivity {
     }
 
     public void loadSongs() {
-        songs = getSongsOfAlbum(albumID, getContentResolver());
+        songs = getSongsOfAlbum(albumID, albumNameString, artistNameString, getContentResolver());
         Collections.sort(songs, (song, t1) -> Integer.compare(song.getTrackNumber(), t1.getTrackNumber()));
         ArrayList<Album> artistAlbums = getAlbumsOfArtist(getContentResolver(), artistNameString);
         for (Album album : artistAlbums) {

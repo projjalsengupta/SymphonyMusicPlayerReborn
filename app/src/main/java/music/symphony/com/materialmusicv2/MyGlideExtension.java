@@ -13,6 +13,7 @@ public class MyGlideExtension {
     private MyGlideExtension() {
     }
 
+    @SuppressWarnings("WeakerAccess")
     @NonNull
     @SuppressLint("CheckResult")
     @GlideOption

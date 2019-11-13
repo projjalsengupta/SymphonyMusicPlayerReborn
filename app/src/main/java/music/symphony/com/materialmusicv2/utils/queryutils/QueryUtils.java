@@ -1,5 +1,6 @@
 package music.symphony.com.materialmusicv2.utils.queryutils;
 
+import android.annotation.SuppressLint;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,6 +9,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.provider.MediaStore;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.preference.PreferenceManager;
@@ -19,6 +21,7 @@ import java.io.File;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Objects;
 
 import music.symphony.com.materialmusicv2.R;
 import music.symphony.com.materialmusicv2.SymphonyApplication;
@@ -60,7 +63,7 @@ public class QueryUtils {
                 int dataColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DATA);
                 int albumColumn = cursor.getColumnIndex(MediaStore.Audio.Media.ALBUM);
                 int dateColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DATE_ADDED);
-                int durationColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DURATION);
+                @SuppressLint("InlinedApi") int durationColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DURATION);
                 int artistIdColumn = cursor.getColumnIndex(MediaStore.Audio.Media.ARTIST_ID);
                 int trackNumberColumn = cursor.getColumnIndex(MediaStore.Audio.Media.TRACK);
                 int yearColumn = cursor.getColumnIndex(MediaStore.Audio.Media.YEAR);
@@ -107,7 +110,7 @@ public class QueryUtils {
                 int dataColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DATA);
                 int albumColumn = cursor.getColumnIndex(MediaStore.Audio.Media.ALBUM);
                 int dateColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DATE_ADDED);
-                int durationColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DURATION);
+                @SuppressLint("InlinedApi") int durationColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DURATION);
                 int artistIdColumn = cursor.getColumnIndex(MediaStore.Audio.Media.ARTIST_ID);
                 int trackNumberColumn = cursor.getColumnIndex(MediaStore.Audio.Media.TRACK);
                 int yearColumn = cursor.getColumnIndex(MediaStore.Audio.Media.YEAR);
@@ -146,7 +149,7 @@ public class QueryUtils {
         ArrayList<Album> albums = new ArrayList<>();
         if (songs != null) {
             for (Song song : songs) {
-                getOrCreateAlbum(albums, (int) song.getAlbumId()).getSongs().add(song);
+                getOrCreateAlbum(albums, song.getAlbumId(), song.getAlbum(), song.getArtist()).getSongs().add(song);
             }
         }
         for (Album album : albums) {
@@ -155,9 +158,9 @@ public class QueryUtils {
         return albums;
     }
 
-    private static Album getOrCreateAlbum(ArrayList<Album> albums, int albumId) {
+    private static Album getOrCreateAlbum(ArrayList<Album> albums, long albumId, String albumName, String artistName) {
         for (Album album : albums) {
-            if (!album.getSongs().isEmpty() && album.getSongs().get(0).getAlbumId() == albumId) {
+            if (!album.getSongs().isEmpty() && (album.getSongs().get(0).getAlbumId() == albumId || (album.getSongs().get(0).getAlbum().equals(albumName) && album.getSongs().get(0).getArtist().equals(artistName)))) {
                 return album;
             }
         }
@@ -189,15 +192,15 @@ public class QueryUtils {
         ArrayList<Artist> artists = new ArrayList<>();
         if (albums != null) {
             for (Album album : albums) {
-                getOrCreateArtist(artists, album.getArtistId()).albums.add(album);
+                getOrCreateArtist(artists, album.getArtistId(), album.getArtist()).albums.add(album);
             }
         }
         return artists;
     }
 
-    private static Artist getOrCreateArtist(ArrayList<Artist> artists, int artistId) {
+    private static Artist getOrCreateArtist(ArrayList<Artist> artists, int artistId, String artistName) {
         for (Artist artist : artists) {
-            if (!artist.albums.isEmpty() && !artist.albums.get(0).getSongs().isEmpty() && artist.albums.get(0).getSongs().get(0).getArtistId() == artistId) {
+            if (!artist.albums.isEmpty() && !artist.albums.get(0).getSongs().isEmpty() && (artist.albums.get(0).getSongs().get(0).getArtistId() == artistId || artist.albums.get(0).getSongs().get(0).getArtist().equals(artistName))) {
                 return artist;
             }
         }
@@ -261,14 +264,15 @@ public class QueryUtils {
         return playlists;
     }
 
-    public static ArrayList<Song> getSongsOfAlbum(long albumID, ContentResolver contentResolver) {
+    public static ArrayList<Song> getSongsOfAlbum(long albumID, String albumName, String artistName, ContentResolver contentResolver) {
         ArrayList<Song> songs = new ArrayList<>();
         try {
             String selection = "is_music != 0";
             if (albumID > 0) {
-                selection = selection + " and album_id = " + albumID;
+                selection = selection + " and album_id = " + albumID + " or (album = '" + albumName + "' and artist = '" + artistName + "')";
+                Log.e("ERRRRRROOOORR", selection);
             }
-            String[] projection = {
+            @SuppressLint("InlinedApi") String[] projection = {
                     MediaStore.Audio.Media._ID,
                     MediaStore.Audio.Media.TITLE,
                     MediaStore.Audio.Media.ARTIST,
@@ -333,7 +337,7 @@ public class QueryUtils {
                 int dataColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DATA);
                 int albumColumn = cursor.getColumnIndex(MediaStore.Audio.Media.ALBUM);
                 int dateColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DATE_ADDED);
-                int durationColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DURATION);
+                @SuppressLint("InlinedApi") int durationColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DURATION);
                 int artistIdColumn = cursor.getColumnIndex(MediaStore.Audio.Media.ARTIST_ID);
                 int trackNumberColumn = cursor.getColumnIndex(MediaStore.Audio.Media.TRACK);
                 int yearColumn = cursor.getColumnIndex(MediaStore.Audio.Media.YEAR);
@@ -424,7 +428,7 @@ public class QueryUtils {
                 int dataColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DATA);
                 int albumColumn = cursor.getColumnIndex(MediaStore.Audio.Media.ALBUM);
                 int dateColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DATE_ADDED);
-                int durationColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DURATION);
+                @SuppressLint("InlinedApi") int durationColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DURATION);
                 int artistIdColumn = cursor.getColumnIndex(MediaStore.Audio.Media.ARTIST_ID);
                 int trackNumberColumn = cursor.getColumnIndex(MediaStore.Audio.Media.TRACK);
                 int yearColumn = cursor.getColumnIndex(MediaStore.Audio.Media.YEAR);
@@ -441,7 +445,7 @@ public class QueryUtils {
                     int trackNumber = cursor.getInt(trackNumberColumn);
                     int year = cursor.getInt(yearColumn);
                     File file = new File(thisData);
-                    if (file.getParentFile().getPath().equals(path)) {
+                    if (Objects.requireNonNull(file.getParentFile()).getPath().equals(path)) {
                         songs.add(new Song(thisId, thisTitle, thisArtist, thisArt, thisData, thisAlbum, thisDate, duration, artistId, trackNumber, year));
                     }
                 }
@@ -470,7 +474,7 @@ public class QueryUtils {
                 int dataColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DATA);
                 int albumColumn = cursor.getColumnIndex(MediaStore.Audio.Media.ALBUM);
                 int dateColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DATE_ADDED);
-                int durationColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DURATION);
+                @SuppressLint("InlinedApi") int durationColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DURATION);
                 int artistIdColumn = cursor.getColumnIndex(MediaStore.Audio.Media.ARTIST_ID);
                 int trackNumberColumn = cursor.getColumnIndex(MediaStore.Audio.Media.TRACK);
                 int yearColumn = cursor.getColumnIndex(MediaStore.Audio.Media.YEAR);
@@ -487,7 +491,7 @@ public class QueryUtils {
                     int trackNumber = cursor.getInt(trackNumberColumn);
                     int year = cursor.getInt(yearColumn);
                     File file = new File(thisData);
-                    if (file.getParentFile().getPath().equals(path)) {
+                    if (Objects.requireNonNull(file.getParentFile()).getPath().equals(path)) {
                         songs.add(new Song(thisId, thisTitle, thisArtist, thisArt, thisData, thisAlbum, thisDate, duration, artistId, trackNumber, year));
                     }
                 }
@@ -524,7 +528,7 @@ public class QueryUtils {
                 int dataColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DATA);
                 int albumColumn = cursor.getColumnIndex(MediaStore.Audio.Media.ALBUM);
                 int dateColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DATE_ADDED);
-                int durationColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DURATION);
+                @SuppressLint("InlinedApi") int durationColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DURATION);
                 int artistIdColumn = cursor.getColumnIndex(MediaStore.Audio.Media.ARTIST_ID);
                 int trackNumberColumn = cursor.getColumnIndex(MediaStore.Audio.Media.TRACK);
                 int yearColumn = cursor.getColumnIndex(MediaStore.Audio.Media.YEAR);
@@ -659,7 +663,7 @@ public class QueryUtils {
                 int dataColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DATA);
                 int albumColumn = cursor.getColumnIndex(MediaStore.Audio.Media.ALBUM);
                 int dateColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DATE_ADDED);
-                int durationColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DURATION);
+                @SuppressLint("InlinedApi") int durationColumn = cursor.getColumnIndex(MediaStore.Audio.Media.DURATION);
                 int artistIdColumn = cursor.getColumnIndex(MediaStore.Audio.Media.ARTIST_ID);
                 int trackNumberColumn = cursor.getColumnIndex(MediaStore.Audio.Media.TRACK);
                 int yearColumn = cursor.getColumnIndex(MediaStore.Audio.Media.YEAR);

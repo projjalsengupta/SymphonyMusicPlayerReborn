@@ -218,4 +218,5 @@
     <string name="unlock_tab_titles_mode">3 modos de título de pestaña</string>
     <string name="unlock_visualizer_type">3 tipos de visualizador</string>
     <string name="circular">Circular</string>
+    <string name="enable_visualizer">Habilitar visualizador</string>
 </resources>

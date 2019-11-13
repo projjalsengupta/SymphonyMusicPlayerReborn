@@ -223,6 +223,22 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
                 }
             });
         }
+
+        if (visualizerTypePreference != null) {
+            if (SymphonyApplication.getInstance().getPreferenceUtils().getEnableVisualizer()) {
+                visualizerTypePreference.setVisible(true);
+            } else {
+                visualizerTypePreference.setVisible(false);
+            }
+        }
+
+        if (visualizerSpeedPreference != null) {
+            if (SymphonyApplication.getInstance().getPreferenceUtils().getEnableVisualizer()) {
+                visualizerSpeedPreference.setVisible(true);
+            } else {
+                visualizerSpeedPreference.setVisible(false);
+            }
+        }
     }
 
     @Override
@@ -245,6 +261,23 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
                     showQueueInNotification.setVisible(true);
                 } else {
                     showQueueInNotification.setVisible(false);
+                }
+            }
+        } else if ("enableVisualizer".equals(s)) {
+            Preference visualizerTypePreference = findPreference("visualizerType");
+            if (visualizerTypePreference != null) {
+                if (sharedPreferences.getBoolean("enableVisualizer", true)) {
+                    visualizerTypePreference.setVisible(true);
+                } else {
+                    visualizerTypePreference.setVisible(false);
+                }
+            }
+            Preference visualizerSpeedPreference = findPreference("visualizerSpeed");
+            if (visualizerSpeedPreference != null) {
+                if (sharedPreferences.getBoolean("enableVisualizer", true)) {
+                    visualizerSpeedPreference.setVisible(true);
+                } else {
+                    visualizerSpeedPreference.setVisible(false);
                 }
             }
         }

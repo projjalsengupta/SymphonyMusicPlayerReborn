@@ -512,7 +512,7 @@ public class SearchAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                     PopupMenu popupMenu = new PopupMenu(activity, view);
                     popupMenu.getMenuInflater().inflate(R.menu.menu_albums, popupMenu.getMenu());
                     popupMenu.setOnMenuItemClickListener(item -> {
-                        final ArrayList<Song> songs = getSongsOfAlbum(album.getId(), activity.getContentResolver());
+                        final ArrayList<Song> songs = getSongsOfAlbum(album.getId(), album.getName(), album.getArtist(), activity.getContentResolver());
                         switch (item.getItemId()) {
                             case R.id.action_play: {
                                 playList(songs, 0);

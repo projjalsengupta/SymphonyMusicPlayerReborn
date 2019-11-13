@@ -589,4 +589,11 @@ public class PreferenceUtils {
             sharedPreferences.edit().putInt("lastOpenedFragment", lastOpenedFragment).apply();
         }
     }
+
+    public boolean getEnableVisualizer() {
+        if (sharedPreferences != null) {
+            return sharedPreferences.getBoolean("enableVisualizer", true);
+        }
+        return true;
+    }
 }
